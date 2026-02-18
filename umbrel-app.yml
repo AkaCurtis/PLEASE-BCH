@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: axebch-ath-watcher
+name: AxeBCH ATH Watcher
+tagline: Discord alerts when a worker hits a new all-time best share
+icon: icon.svg
+category: Utilities
+version: "1.0.0"
+port: 3001
+description: >
+  Watches AxeBCH pool workers and posts Discord webhook notifications when any worker sets a new all-time best share.
+  
+  Configure your Discord webhook URL through the web interface.
+developer: You
+website: ""
+repo: ""
+support: ""
+gallery: []
+releaseNotes: >
+  First release with web-based configuration.
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

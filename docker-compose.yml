@@ -1,0 +1,41 @@
+services:
+  backend:
+    image: python:3.12-alpine
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/backend.py:/app/backend.py
+    working_dir: /app
+    command: >
+      sh -c "pip install flask pyyaml --quiet &&
+             python backend.py"
+    ports:
+      - "${APP_PORT}:3001"
+    networks:
+      - default
+
+  watcher:
+    image: python:3.12-alpine
+    restart: unless-stopped
+    environment:
+      UMBREL_APP_BASE: "${UMBREL_APP_BASE:-http://umbrel.local:21212}"
+      UMBREL_PROXY_TOKEN: "${UMBREL_PROXY_TOKEN:-}"
+      POLL_SECONDS: "15"
+      STATE_FILE: "/data/state.json"
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/watcher.py:/app/watcher.py
+    working_dir: /app
+    command: >
+      sh -c "pip install requests pyyaml --quiet &&
+             python watcher.py"
+    depends_on:
+      - backend
+    networks:
+      - default
+
+networks:
+  default:
+    external: true
+    name: umbrel_main_network
