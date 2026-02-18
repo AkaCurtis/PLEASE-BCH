@@ -14,7 +14,7 @@ services:
     working_dir: /app
     command: >
       sh -c "pip install --no-cache-dir flask pyyaml >/dev/null &&
-             python backend.py"
+             python /app/backend.py"
     # Backend stays on default app network for app_proxy communication
 
   watcher:
@@ -30,7 +30,7 @@ services:
     working_dir: /app
     command: >
       sh -c "pip install --no-cache-dir requests pyyaml >/dev/null &&
-             python watcher.py"
+             python /app/watcher.py"
     depends_on:
       - backend
     networks:
