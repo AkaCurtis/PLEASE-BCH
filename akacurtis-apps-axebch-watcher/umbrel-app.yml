@@ -4,7 +4,7 @@ name: AxeBCH ATH Watcher
 tagline: Discord alerts when workers hit new all-time best shares
 icon: https://raw.githubusercontent.com/AkaCurtis/PLEASE-BCH/master/akacurtis-apps-axebch-watcher/icon.svg
 category: Utilities
-version: "1.0.5"
+version: "1.0.6"
 port: 3001
 description: >
   Watches AxeBCH pool workers and posts Discord webhook notifications when any worker sets a new all-time best share.
@@ -16,7 +16,7 @@ repo: "https://github.com/AkaCurtis/PLEASE-BCH"
 support: "https://github.com/AkaCurtis/PLEASE-BCH/issues"
 gallery: []
 releaseNotes: >
-  Fixed: Corrected volume paths for Umbrel environment.
+  Fixed: Corrected network configuration for app_proxy routing.
 
 dependencies: []
 path: ""
