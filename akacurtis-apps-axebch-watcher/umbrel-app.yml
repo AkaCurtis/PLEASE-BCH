@@ -2,9 +2,9 @@ manifestVersion: 1
 id: akacurtis-apps-axebch-watcher
 name: AxeBCH ATH Watcher
 tagline: Discord alerts when workers hit new all-time best shares
-icon: https://raw.githubusercontent.com/AkaCurtis/PLEASE-BCH/main/akacurtis-apps-axebch-watcher/icon.svg
+icon: https://raw.githubusercontent.com/AkaCurtis/PLEASE-BCH/master/akacurtis-apps-axebch-watcher/icon.svg
 category: Utilities
-version: "1.0.3"
+version: "1.0.4"
 port: 3001
 description: >
   Watches AxeBCH pool workers and posts Discord webhook notifications when any worker sets a new all-time best share.
