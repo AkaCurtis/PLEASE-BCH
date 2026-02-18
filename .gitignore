@@ -29,6 +29,7 @@ Thumbs.db
 *.yml
 !umbrel-app.yml
 !umbrel-app-store.yml
+!docker-compose.yml
 *.log
 
 # Testing
