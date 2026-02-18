@@ -35,5 +35,8 @@ Thumbs.db
 poll_blocks_and_workers.py
 index.html
 
+# PowerShell scripts (development only)
+*.ps1
+
 # Umbrel
 .umbrelignore

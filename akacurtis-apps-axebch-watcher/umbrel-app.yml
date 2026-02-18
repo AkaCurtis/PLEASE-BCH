@@ -2,7 +2,7 @@ manifestVersion: 1
 id: akacurtis-apps-axebch-watcher
 name: AxeBCH ATH Watcher
 tagline: Discord alerts when workers hit new all-time best shares
-icon: https://raw.githubusercontent.com/AkaCurtis/BCH-Umbrel/main/akacurtis-apps-axebch-watcher/icon.svg
+icon: https://raw.githubusercontent.com/AkaCurtis/PLEASE-BCH/main/akacurtis-apps-axebch-watcher/icon.svg
 category: Utilities
 version: "1.0.2"
 port: 3001
@@ -12,8 +12,8 @@ description: >
   Configure your Discord webhook URL through the web interface.
 developer: AkaCurtis
 website: ""
-repo: "https://github.com/AkaCurtis/BCH-Umbrel"
-support: "https://github.com/AkaCurtis/BCH-Umbrel/issues"
+repo: "https://github.com/AkaCurtis/PLEASE-BCH"
+support: "https://github.com/AkaCurtis/PLEASE-BCH/issues"
 gallery: []
 releaseNotes: >
   First release with web-based configuration.
@@ -23,4 +23,4 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 submitter: AkaCurtis
-submission: https://github.com/AkaCurtis/BCH-Umbrel
+submission: https://github.com/AkaCurtis/PLEASE-BCH
